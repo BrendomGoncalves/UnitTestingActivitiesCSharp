@@ -11,7 +11,7 @@
             Y = y;
         }
 
-        public double DistanceTo(Point other)
+        public double DistanceTo(Point? other)
         {
             if (other == null)
             {
