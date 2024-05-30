@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Atividade09
+﻿namespace Atividade09
 {
     public class ItemCollection
     {
-        private readonly List<Item> _items;
+        private readonly List<Item?> _items;
 
         public ItemCollection()
         {
-            _items = new List<Item>();
+            _items = new List<Item?>();
         }
 
-        public void AddItem(Item item)
+        public void AddItem(Item? item)
         {
             if (item == null)
             {
@@ -24,7 +18,7 @@ namespace Atividade09
             _items.Add(item);
         }
 
-        public void RemoveItem(Item item)
+        public void RemoveItem(Item? item)
         {
             if (!_items.Contains(item))
             {
@@ -33,7 +27,7 @@ namespace Atividade09
             _items.Remove(item);
         }
 
-        public List<Item> GetItems()
+        public List<Item?> GetItems()
         {
             return _items;
         }
